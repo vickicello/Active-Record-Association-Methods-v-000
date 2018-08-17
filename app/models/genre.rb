@@ -8,7 +8,7 @@ class Genre < ActiveRecord::Base
 
   def artist_count
     self.songs.collect do |song|
-      song.artist 
+      song.artist
     end.uniq.length
   end
 
